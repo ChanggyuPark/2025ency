@@ -223,9 +223,26 @@ td.sat:empty {
   }
 }
 
-.calendar-grid {
-  min-height: 550px;
-  overflow-y: hidden;
+/* 모바일 중앙정렬 보정 */
+@media (max-width: 640px) {
+  .container, .calendar-wrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-grid {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box;
+  }
+
+  .calendar-box {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
 }
 </style>
 </head>
