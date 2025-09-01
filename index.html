@@ -449,12 +449,12 @@ function changeMonth(offset) {
 
 
 function goToday() {
-  currentIndex = 2; // August 2025
+  currentIndex = 3; // September 2025
   renderCalendar(monthList[currentIndex]);
 }
 
 
-window.onload = () => { currentIndex = 2; renderCalendar(monthList[currentIndex]); };
+window.onload = () => { currentIndex = 3; renderCalendar(monthList[currentIndex]); };
 
 // Apply background for empty sun/sat cells
 document.querySelectorAll("td.sun:empty, td.sat:empty").forEach(td => {
